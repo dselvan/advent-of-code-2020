@@ -1,3 +1,5 @@
+using BenchmarkTools
+
 test_input = parse.(Int64, readlines("1/input.txt"));
 
 function sum2(input, sum2val, is_sorted=false)
@@ -28,3 +30,6 @@ end
 
 println("Part 1: $(sum2(test_input, 2020))")
 println("Part 2: $(sum3(test_input, 2020))")
+
+@benchmark sum2(test_input, 2020)
+# @benchmark sum3(test_input, 2020)

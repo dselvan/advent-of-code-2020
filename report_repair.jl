@@ -28,8 +28,8 @@ function sum3(input, sum3val, is_sorted=false)
     return 0
 end
 
-println("Part 1: $(sum2(test_input, 2020))")
-println("Part 2: $(sum3(test_input, 2020))")
+# println("Part 1: $(sum2(test_input, 2020))")
+# println("Part 2: $(sum3(test_input, 2020))")
 
 @benchmark sum2(test_input, 2020)
-# @benchmark sum3(test_input, 2020)
+@benchmark sum3(test_input, 2020)
